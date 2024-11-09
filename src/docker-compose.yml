@@ -1,0 +1,7 @@
+    version: '3.8'
+    services:
+    svelte-elso-feladatom:
+      image: svelte_elso_feladatom:latest
+      ports:
+        - "8080:5173"
+       
