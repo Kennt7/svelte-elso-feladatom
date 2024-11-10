@@ -3,6 +3,6 @@ services:
   svelte-elso-feladatom:
     build: .
     ports:
-      - "8080:5173"
+      - "5173:5173"
 
        

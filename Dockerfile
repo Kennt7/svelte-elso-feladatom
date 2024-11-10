@@ -2,7 +2,7 @@
 FROM node:16-alpine3.11
 
 # 2. lépés: állítsd be a munkakönyvtárat
-WORKDIR /usr/src/
+WORKDIR /app
 
 # 3. lépés: másold át a package.json és package-lock.json fájlokat
 COPY package*.json ./
@@ -18,7 +18,7 @@ COPY . .
 RUN npm install -g sirv-cli
 
 # 7. lépés: add meg az alapértelmezett portot (5000)
-EXPOSE 5000
+EXPOSE 5173
 
 # 8. lépés: indítsd el az alkalmazást
 CMD ["npm","run","dev"]
