@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  svelte-elso-feladatom:
+    build: .
+    ports:
+      - "8080:5173"
+
+       
